@@ -19,8 +19,8 @@ variables:
   imagePullSecret: 'shophomereg1049f9c9-auth'
 
   # Agent VM image name
- pool:
-   name: azurepipelineagent
+pool:
+  name: azurepipelineagent
 
   # Name of the new namespace being created to deploy the PR changes.
   k8sNamespaceForPR: 'review-app-$(System.PullRequest.PullRequestId)'
